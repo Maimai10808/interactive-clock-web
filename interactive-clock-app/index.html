@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多功能时钟</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 数字时钟 -->
+        <div class="clock-section">
+            <div class="digital-clock">
+                <div class="time">00:00:00</div>
+                <div class="date">星期一, 2024年3月15日</div>
+            </div>
+            <div class="analog-clock">
+                <div class="clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 秒表 -->
+        <div class="stopwatch-section">
+            <h2>秒表</h2>
+            <div class="stopwatch-display">00:00:00.00</div>
+            <div class="controls">
+                <button class="start-btn">开始</button>
+                <button class="stop-btn">停止</button>
+                <button class="reset-btn">重置</button>
+            </div>
+            <div class="laps">
+                <h3>计次</h3>
+                <ul class="lap-times"></ul>
+            </div>
+        </div>
+
+        <!-- 计时器 -->
+        <div class="timer-section">
+            <h2>计时器</h2>
+            <div class="timer-set">
+                <input type="number" class="hours" placeholder="时" min="0" max="23">
+                <input type="number" class="minutes" placeholder="分" min="0" max="59">
+                <input type="number" class="seconds" placeholder="秒" min="0" max="59">
+            </div>
+            <div class="timer-display">00:00:00</div>
+            <div class="controls">
+                <button class="timer-start">开始</button>
+                <button class="timer-stop">停止</button>
+                <button class="timer-reset">重置</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
